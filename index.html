@@ -23,12 +23,25 @@
     <div class="description">
         <h1>Mi hermosa princesa, Ali,¿aceptas ser mi san Valentín?</h1>
     </div>
-    <div class="button">
-        <button class="botones">
-            <a href="flower.html" style="color: #fff;">CLICK AQUÍ</a>
-        </button>
-    </div>
+  <div class="button">
+    <button onclick="mostrarMensaje()">Presiona aquí, mi princesa</button>
+    <p id="mensaje" style="font-size: 20px; font-weight: bold;"></p>
+</div>
+
 <script>
+function mostrarMensaje() {
+  document.getElementById("mensaje").innerHTML = "¡Te amo, mi princesa!";
+}
+</script><div class="button">
+    <button onclick="mostrarMensaje()">Presiona aquí, mi princesa</button>
+    <p id="mensaje" style="font-size: 20px; font-weight: bold;"></p>
+</div>
+
+<script>
+function mostrarMensaje() {
+  document.getElementById("mensaje").innerHTML = "¡Te amo, mi princesa!";
+}
+</script>
   for (let i = 0; i < 20; i++) {
     let petal = document.createElement("div");
     petal.className = "petal";
