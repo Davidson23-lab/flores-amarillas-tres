@@ -28,7 +28,15 @@
             <a href="flower.html" style="color: #fff;">CLICK AQUÍ</a>
         </button>
     </div>
-
+<script>
+  for (let i = 0; i < 20; i++) {
+    let petal = document.createElement("div");
+    petal.className = "petal";
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    document.body.appendChild(petal);
+  }
+</script>
 </body>
 
 </html>
